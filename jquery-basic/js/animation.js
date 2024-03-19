@@ -18,9 +18,39 @@ $(function(){
   // });
 
   //id属性がfadeToggleの要素がクリックされたら
-  $('#fadeToggle').on('click',function(){
-    //フェードイン or フェードアウトする
-    $('.box').fadeToggle();
+  // $('#fadeToggle').on('click',function(){
+  //   //フェードイン or フェードアウトする
+  //   $('.box').fadeToggle();
+  // });
+
+  //CSSでアニメーションさせてみよう(cssで設定した値で各アニメーションの処理を行える)
+  $('#fadeOut').on('click',function(){
+    //不透明度を0にする(フェードアウトする)
+    $('.box').css('opacity',0);
   });
+
+  $('#fadeIn').on('click', function(){
+    //不透明度を1にする（フェードインする）
+    $('.box').css('opacity',1);
+  });
+
+  //id属性slideUp
+  $('#slideUp').on('click', function(){
+    // $('.box').slideUp();
+    //高さを0にする（スライドアップする）
+    $('.box').css('height',0);
+  });
+
+  //id属性slideDown
+  $('#slideDown').on('click',function(){
+    // $('.box').slideDown();
+    // 高さを200にする（スライドダウンする）
+    $('.box').css('height',200);
+  });
+
+  //id属性slideToggle
+  // $('#slideToggle').on('click', function(){
+  //   $('.box').slideToggle();
+  // });
 
 });
