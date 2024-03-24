@@ -20,4 +20,22 @@ $(function(){
       marginLeft: 0,
     }, 100);
   });
+
+  //slickの設定内容
+  /* slickの公式サイトに記載されているサンプルコードを参考にコードを書く
+    class名がcarouselのHTML要素をslickでカルーセル化する 
+    autoplay：trueに設定し、画像を自動的に切り替える
+    dots：trueに設定し、カルーセルの下に現在地を示すUI（ドット）を表示する
+    infinite：trueに設定し、画像をループさせる
+    autoplaySpeed：5000に設定し、5秒ごとに画像を切り替える
+    arrows：falseに設定し、カルーセルの左右の矢印を非表示にする
+    */
+   //カルーセル
+   $('.carousel').slick({
+    autoplay: true,
+    dots: true,
+    infinity: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+   });
 });

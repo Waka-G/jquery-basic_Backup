@@ -20,10 +20,20 @@ p {
  PC用のスタイル
 =================*/
 @media screen and (min-width: 768px) {
+    /* PC用カルーセル設定 */
+    .carousel {
+        width: 885px;
+        margin-left: 20px;
+    }
+    
+    .carouselImg {
+        width: 885px;
+    }
+
     /* 横幅設定 */
     body {
         max-width: 1080px;
-        min-width: 900px;
+        min-width: 900px;   /*← bodyの横幅は最小900px*/
         margin: 0 auto 0 auto;
     }
 
@@ -681,6 +691,20 @@ p {
  スマートフォン用のスタイル
 =====================*/
 @media screen and (max-width: 767px) {
+    /* 画像を調整する */
+    /* スマホ用カルーセル設定 */
+    /* カルーセルをグループ化するdiv要素（.carousel）
+        width（幅）：375px
+        margin（余白）：上下に0、左右にautoを指定して中央寄せにする */
+    .carousel {
+        width: 375px;
+        margin: 0 auto 0 auto;
+    }
+        
+    .carouselImg {
+        width: 375px;
+    }
+
     body {
         min-width: 375px;
         margin: 0;
@@ -693,8 +717,13 @@ p {
 
     /* ハンバーガーメニュー */
     #menu-sp {
-        float: right;
-        padding: 0;
+        /* float: right;
+        padding: 0; */
+        /* ハンバーガーメニューの幅の分だけ余分な余白のせいで、
+        　　カルーセルの表示がおかしくなっている */
+        position: absolute;
+        top: 0px;
+        right: 0px;
     }
 
     /* スマホ用ナビゲーションの表示切替*/
@@ -1272,8 +1301,9 @@ p {
         border-radius: 0 300px 0 0;
     }
 
-    .product-section1 > div {
-    }
+    /* 空欄エラー */
+    /* .product-section1 > div {
+    } */
 
     .product-section2 {
         margin: 20px;

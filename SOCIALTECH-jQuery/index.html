@@ -7,6 +7,14 @@
     <meta name="description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+<!-- Slick(カルーセルを作成するためのjQueryのプラグイン) -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
 </head>
 
 <body>
@@ -59,12 +67,31 @@
     <main>
         <article>
             <!-- メインビジュアル -->
-            <section id="main-visual">
+            <!-- <section id="main-visual">
                 <div id="main-message">
                     <h1>WORLD PEACE</h1>
                     <p>IT教育で世界平和を実現する</p>
                 </div>
                 <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
+            </section> -->
+            <!-- カルーセル -->
+            <section id="carousel-section">
+                <div class="carousel">
+                    <div>
+                        <a href="index.html">
+                        <img class="carouselImg" src="images/carousel1.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mission.html">
+                        <img class="carouselImg" src="images/carousel2.png">
+                        </a>
+                    </div>
+                    <div><a href="product.html">
+                        <img class="carouselImg" src="images/carousel3.png">
+                        </a>
+                    </div>
+                </div>
             </section>
             <section id="mission">
                 <h2 class="index-h2">MISSION</h2>
@@ -423,6 +450,10 @@
 
     <!-- JSファイルを読み込む -->
     <script src="script.js"></script>
+
+    <!--  Slick(カルーセルを作成するためのjQueryのプラグイン)  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 
 </html>
